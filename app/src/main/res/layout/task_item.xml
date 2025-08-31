@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/task_item_background"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp"
+    android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/task_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:buttonTint="@color/buttonColor"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sample Task"
+        android:textSize="18sp"
+        android:textColor="@color/primaryTextColor"
+        android:layout_gravity="center_vertical"
+        android:paddingStart="16dp" />
+
+    <TextView
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="@color/buttonColor"
+        android:paddingEnd="16dp"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@color/red"
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="16dp" />
+
+    <CheckBox
+        android:id="@+id/pin_task_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:buttonTint="@color/buttonColor"
+        android:focusable="false"
+        android:text="Pin Task" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="primaryTextColor">#4E4A4A</color> <!-- Soft Dark Gray -->
+        <color name="timerColor">#FFFFFF</color> <!-- White for Timer Text -->
+        <color name="buttonColor">#9C64A6</color> <!-- Soft Lavender -->
+        <color name="buttonTextColor">#FFFFFF</color> <!-- White Button Text -->
+        <color name="backColorStart">#D5A6E1</color> <!-- Soft Light Purple (Gradient Start) -->
+        <color name="backColorEnd">#FFD1DC</color> <!-- Soft Peach (Gradient End) -->
+        <color name="gray_light">#F5F5F5</color> <!-- Light Gray Background -->
+        <color name="red">#FF5733</color> <!-- Red for Delete -->
+        <color name="white">#FFFFFF</color> <!-- White -->
+        <color name="black">#000000</color> <!-- Black Text -->
+        <color name="teal_700">#00796B</color> <!-- Teal Color for Buttons -->
+        <color name="gray">#858585</color>
+
+</resources>

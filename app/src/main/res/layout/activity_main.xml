@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/back">
+
+    <!-- Timer Title -->
+    <TextView
+        android:id="@+id/timer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Time Until Day End "
+        android:textSize="24sp"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="48sp"
+        android:textColor="@color/timerColor"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Completion Percentage Text -->
+    <TextView
+        android:id="@+id/completion_percentage_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completion: 0%"
+        android:textSize="24sp"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- View Tasks Button -->
+    <Button
+        android:id="@+id/view_tasks_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Tasks"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Add Task Button -->
+    <Button
+        android:id="@+id/add_task_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Task"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/white" />
+</LinearLayout>

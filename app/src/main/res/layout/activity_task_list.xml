@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/backColorStart">
+
+        <!-- Task List Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Tasks"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Completion Percentage Text -->
+        <TextView
+            android:id="@+id/completion_percentage_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completion: 0%"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- RecyclerView for task list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/task_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background"
+            android:padding="8dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- No tasks message -->
+        <TextView
+            android:id="@+id/no_tasks_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There are no tasks yet"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:backgroundTint="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
